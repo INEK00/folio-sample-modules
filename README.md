@@ -6,6 +6,7 @@ This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 # Introduction
+This is INEK-FOLIO-SAMPLE-MODULES
 
 This project contains examples of FOLIO modules (currently a server-side
 Vert.x-based module, but more, e.g. a UI/front-end module will come later),
