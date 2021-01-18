@@ -6,7 +6,7 @@
 #   docker run -t -i -p 8080:8080 folio-simple-module
 ###
 
-FROM java:8
+FROM folioci/alpine-jre-openjdk11:latest
 
 ENV VERTICLE_FILE folio-simple-vertx-fat.jar
 
@@ -16,8 +16,8 @@ ENV VERTICLE_HOME /usr/verticles
 EXPOSE 8080
 
 # Copy your fat jar to the container
-COPY target/$VERTICLE_FILE $VERTICLE_HOME/module.jar
+COPY target/$VERTICLE_FILE $VERTICLE_HOME/folio-simple-vertx-fat.jar
 
 # Launch the verticle
 WORKDIR $VERTICLE_HOME
-ENTRYPOINT ["java", "-jar", "module.jar"]
+ENTRYPOINT ["java", "-jar", "folio-simple-vertx-fat.jar"]

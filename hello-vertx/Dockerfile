@@ -6,7 +6,7 @@
 #   docker run -t -i -p 8080:8080 folio-hello-module
 ###
 
-FROM java:8
+FROM folioci/alpine-jre-openjdk11:latest
 
 ENV VERTICLE_FILE folio-hello-vertx-fat.jar
 
