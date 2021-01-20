@@ -1,3 +1,5 @@
 FAQ.html
 README.html
 target/
+*.iml
+.idea
